@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiNeS</title>
+</head>
+<body>
+  <canvas id="butt" width="500" height="500"></canvas>
+  <canvas id="round" width="500" height="500"></canvas>
+  <canvas id="square" width="500" height="500"></canvas>
+
+  <script>
+      const butt = document.getElementById('butt');
+      const ctx1 = butt.getContext('2d');
+
+      // Set line properties
+      ctx1.lineWidth = 10;
+      ctx1.lineCap = 'butt';
+
+      // Draw line
+      ctx1.beginPath();
+      ctx1.moveTo(300, 300);
+      ctx1.lineTo(150, 150);
+      ctx1.stroke();
+  </script>
+
+  <script>
+      const round = document.getElementById('round');
+      const ctx2 = round.getContext('2d');
+
+      // Set line properties
+      ctx2.lineWidth = 10;
+      ctx2.lineCap = 'round';
+
+      // Draw line
+      ctx2.beginPath();
+      ctx2.moveTo(300, 300);
+      ctx2.lineTo(150, 150);
+      ctx2.stroke();
+  </script>
+
+  <script>
+      const square = document.getElementById('square');
+      const ctx3 = square.getContext('2d');
+
+      // Set line properties
+      ctx3.lineWidth = 10;
+      ctx3.lineCap = 'square';
+
+      // Draw line
+      ctx3.beginPath();
+      ctx3.moveTo(300, 300);
+      ctx3.lineTo(150, 150);
+      ctx3.stroke();
+  </script>
+</body>
+
+
+</html>
